@@ -1,0 +1,51 @@
+.carousel {
+  position: relative;
+  overflow: hidden;
+  width: 100dvw; /* Set width to fill the container */
+}
+
+.carousel-inner {
+  display: flex;
+  transition: transform 0.5s ease;
+  /* width: 100%; Ensure the inner container takes full width */
+  width: 100%;
+}
+
+.carousel-slide {
+  min-width: 100%;
+   /* Set height to auto for responsiveness */
+}
+
+.carousel-slide img {
+  width: 100%;
+  height: auto; /* Ensure the image scales with the slide */
+  object-fit: cover; /* Preserve aspect ratio and fill the container */
+}
+
+.prev,
+.next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  z-index: 1;
+}
+
+.prev {
+  left: 0;
+}
+
+.next {
+  right: 0;
+}
+
+/* Media Query for laptop devices */
+@media only screen and (min-width: 992px) {
+  .carousel {
+    height: 500px; /* Set height to 400px for laptop devices */
+  }
+}

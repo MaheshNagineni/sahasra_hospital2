@@ -1,0 +1,45 @@
+/* Define styles for both mobile and laptop devices */
+
+.section {
+  padding: 20px;
+  background-color: #f0f0f0;
+}
+
+.app{
+  display: flex;
+  padding: 20px;
+  background-color: #FAAB35;
+}
+
+.section h2 {
+  text-align: left;
+}
+
+.section p {
+  margin-bottom: 20px;
+}
+
+.contact-us{
+  display: flex;
+}
+
+.contact-details {
+  margin-top: 20px;
+  padding-top: 20px;
+}
+
+/* Media query for mobile devices */
+@media (max-width: 767px) {
+  .section {
+    padding: 10px;
+  }
+}
+
+/* Media query for laptop and larger devices */
+@media (min-width: 768px) {
+  .section {
+    padding: 20px 40px;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+}

@@ -1,0 +1,70 @@
+.navbar {
+  background-color: #D8FBF8;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+  position: relative;
+  width: 100vw;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  width: 250px;
+  margin-right: 0.5rem;
+}
+
+.company-name {
+  margin: 0;
+}
+
+.navbar-toggler {
+  display: none;
+}
+
+.nav-menu {
+  list-style: none;
+  display: flex;
+}
+
+.nav-menu li {
+  margin-right: 1rem;
+}
+
+.nav-menu.open {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (max-width: 768px) {
+  .navbar-toggler {
+    display: block;
+  }
+
+  .logo{
+    width: 100px;
+  }
+
+  .nav-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: #fff;
+    padding: 1rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    flex-direction: column;
+  }
+
+  .nav-menu.open {
+    display: flex;
+  }
+
+  .nav-menu li {
+    margin: 0.5rem 0;
+  }
+}
